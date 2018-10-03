@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4a226a6d-247f-4acb-a468-637351a93802" name="Default Changelist" comment="" />
+    <list default="true" id="4a226a6d-247f-4acb-a468-637351a93802" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/br/com/caelum/leilao/infra/dao/LeilaoDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/caelum/leilao/infra/dao/LeilaoDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/br/com/caelum/leilao/dominio/EncerradorDeLeilaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/br/com/caelum/leilao/dominio/EncerradorDeLeilaoTest.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,12 +32,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="51" />
+          <entry key="java" value="364" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="51" />
+          <entry key="JAVA" value="364" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.spring.boot.run.usages" />
@@ -64,8 +67,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/br/com/caelum/leilao/dominio/EncerradorDeLeilaoTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="429">
-              <caret line="38" column="56" selection-start-line="38" selection-start-column="56" selection-end-line="38" selection-end-column="56" />
+            <state relative-caret-position="293">
+              <caret line="75" column="23" selection-start-line="75" selection-start-column="18" selection-end-line="75" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -102,8 +105,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/br/com/caelum/leilao/infra/dao/LeilaoDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="24" column="63" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="63" />
+            <state relative-caret-position="184">
+              <caret line="135" column="52" selection-start-line="135" selection-start-column="52" selection-end-line="135" selection-end-column="52" />
             </state>
           </provider>
         </entry>
@@ -124,8 +127,9 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/br/com/caelum/leilao/infra/dao/LeilaoDaoFalso.java" />
-        <option value="$PROJECT_DIR$/test/br/com/caelum/leilao/dominio/EncerradorDeLeilaoTest.java" />
         <option value="$PROJECT_DIR$/src/br/com/caelum/leilao/servico/EncerradorDeLeilao.java" />
+        <option value="$PROJECT_DIR$/src/br/com/caelum/leilao/infra/dao/LeilaoDao.java" />
+        <option value="$PROJECT_DIR$/test/br/com/caelum/leilao/dominio/EncerradorDeLeilaoTest.java" />
       </list>
     </option>
   </component>
@@ -232,7 +236,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538594091046" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538595369477" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -300,17 +304,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1538589980017</updated>
-      <workItem from="1538589981611" duration="3480000" />
+      <workItem from="1538589981611" duration="4625000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="EncerradorDeLeilaoTest - 2018.10.03 at 15h 08m 01s.xml">
-      <configuration name="EncerradorDeLeilaoTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="EncerradorDeLeilaoTest - 2018.10.03 at 15h 20m 51s.xml">
-      <configuration name="EncerradorDeLeilaoTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="EncerradorDeLeilaoTest_deveEncerrarLeiloesQueComecaramUmaSemanaAtras - 2018.10.03 at 15h 23m 06s.xml">
       <configuration name="EncerradorDeLeilaoTest.deveEncerrarLeiloesQueComecaramUmaSemanaAtras" configurationId="JUnit" />
     </history-entry>
@@ -329,9 +327,21 @@
     <history-entry file="EncerradorDeLeilaoTest - 2018.10.03 at 16h 11m 29s.xml">
       <configuration name="EncerradorDeLeilaoTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="EncerradorDeLeilaoTest - 2018.10.03 at 16h 23m 58s.xml">
+      <configuration name="EncerradorDeLeilaoTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="EncerradorDeLeilaoTest - 2018.10.03 at 16h 26m 53s.xml">
+      <configuration name="EncerradorDeLeilaoTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="EncerradorDeLeilaoTest - 2018.10.03 at 16h 29m 10s.xml">
+      <configuration name="EncerradorDeLeilaoTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="EncerradorDeLeilaoTest - 2018.10.03 at 16h 30m 51s.xml">
+      <configuration name="EncerradorDeLeilaoTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3480000" />
+    <option name="totallyTimeSpent" value="4625000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -381,13 +391,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/br/com/caelum/leilao/infra/dao/LeilaoDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="24" column="63" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/br/com/caelum/leilao/infra/dao/LeilaoDaoFalso.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="493">
@@ -417,10 +420,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/br/com/caelum/leilao/infra/dao/LeilaoDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="135" column="52" selection-start-line="135" selection-start-column="52" selection-end-line="135" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test/br/com/caelum/leilao/dominio/EncerradorDeLeilaoTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="38" column="56" selection-start-line="38" selection-start-column="56" selection-end-line="38" selection-end-column="56" />
+        <state relative-caret-position="293">
+          <caret line="75" column="23" selection-start-line="75" selection-start-column="18" selection-end-line="75" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

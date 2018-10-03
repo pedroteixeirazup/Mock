@@ -7,8 +7,10 @@ import br.com.caelum.leilao.servico.EncerradorDeLeilao;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
 import static org.mockito.Mockito.*;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Calendar;
 import java.util.List;
@@ -29,7 +31,7 @@ public class EncerradorDeLeilaoTest {
         List<Leilao> leiloesAntigos = Arrays.asList(leilao1, leilao2);
 
         LeilaoDao daoFalso = mock(LeilaoDao.class);
-        when(daoFalso.correntes()).thenReturn(leiloesAntigos);
+      //  when(daoFalso.correntes()).thenReturn(leiloesAntigos);
 
         EncerradorDeLeilao encerrador = new EncerradorDeLeilao(daoFalso);
         encerrador.encerra();
@@ -37,5 +39,44 @@ public class EncerradorDeLeilaoTest {
         assertTrue(leilao1.isEncerrado());
         assertTrue(leilao2.isEncerrado());
         assertEquals(2, encerrador.getTotalEncerrados());
+    }
+
+    @Test
+    public void naoDeveEncerrarLeilaoComMenosDeUmaSemana(){
+        Calendar antiga = Calendar.getInstance();
+        antiga.set(2018, 9, 30);
+
+        Leilao leilao1 = new CriadorDeLeilao().para("TV de plasma")
+                .naData(antiga).constroi();
+        List<Leilao> leiloesAntigos = Arrays.asList(leilao1);
+
+        LeilaoDao daoFalso = mock(LeilaoDao.class);
+        when(daoFalso.correntes()).thenReturn(leiloesAntigos);
+
+        EncerradorDeLeilao encerrador = new EncerradorDeLeilao(daoFalso);
+        encerrador.encerra();
+
+        assertEquals(0,encerrador.getTotalEncerrados());
+        assertFalse(leilao1.isEncerrado());
+    }
+
+    @Test
+    public void naoEncerrarLeilaoSeNaoHouver(){
+
+        LeilaoDao daoFalso = mock(LeilaoDao.class);
+        when(daoFalso.correntes()).thenReturn(new ArrayList<Leilao>());
+
+        EncerradorDeLeilao encerrador = new EncerradorDeLeilao(daoFalso);
+        encerrador.encerra();
+
+        assertEquals(0,encerrador.getTotalEncerrados());
+
+    }
+
+    @Test
+    public void testeLeilaoDao(){
+        LeilaoDao leilaoTeste = mock(LeilaoDao.class);
+        when(leilaoTeste.teste()).thenReturn(leilaoTeste.teste());
+        assertEquals("teste", leilaoTeste.teste());
     }
 }
