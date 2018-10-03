@@ -2,7 +2,7 @@ package br.com.caelum.leilao.dominio;
 
 import br.com.caelum.leilao.builder.CriadorDeLeilao;
 import br.com.caelum.leilao.infra.dao.LeilaoDao;
-import br.com.caelum.leilao.infra.dao.LeilaoDaoFalso;
+import br.com.caelum.leilao.infra.dao.RepositorioDeLeiloes;
 import br.com.caelum.leilao.servico.EncerradorDeLeilao;
 import org.junit.Test;
 
@@ -31,7 +31,7 @@ public class EncerradorDeLeilaoTest {
         List<Leilao> leiloesAntigos = Arrays.asList(leilao1, leilao2);
 
         LeilaoDao daoFalso = mock(LeilaoDao.class);
-      //  when(daoFalso.correntes()).thenReturn(leiloesAntigos);
+        when(daoFalso.correntes()).thenReturn(leiloesAntigos);
 
         EncerradorDeLeilao encerrador = new EncerradorDeLeilao(daoFalso);
         encerrador.encerra();
@@ -50,7 +50,7 @@ public class EncerradorDeLeilaoTest {
                 .naData(antiga).constroi();
         List<Leilao> leiloesAntigos = Arrays.asList(leilao1);
 
-        LeilaoDao daoFalso = mock(LeilaoDao.class);
+        RepositorioDeLeiloes daoFalso = mock(LeilaoDao.class);
         when(daoFalso.correntes()).thenReturn(leiloesAntigos);
 
         EncerradorDeLeilao encerrador = new EncerradorDeLeilao(daoFalso);

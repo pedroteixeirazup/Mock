@@ -4,11 +4,17 @@ import java.util.Calendar;
 import java.util.List;
 import br.com.caelum.leilao.dominio.Leilao;
 import br.com.caelum.leilao.infra.dao.LeilaoDao;
+import br.com.caelum.leilao.infra.dao.RepositorioDeLeiloes;
+
 public class EncerradorDeLeilao {
 
 
 	private int encerrados;
-	private final LeilaoDao dao;
+	private final RepositorioDeLeiloes dao;
+
+	public EncerradorDeLeilao(RepositorioDeLeiloes dao2) {
+		this.dao = dao2;
+	}
 
 	public EncerradorDeLeilao(LeilaoDao dao) {
 		this.dao = dao;

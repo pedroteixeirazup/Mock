@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4a226a6d-247f-4acb-a468-637351a93802" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/br/com/caelum/leilao/infra/dao/RepositorioDeLeiloes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/br/com/caelum/leilao/infra/dao/LeilaoDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/caelum/leilao/infra/dao/LeilaoDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/caelum/leilao/infra/dao/LeilaoDaoFalso.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/caelum/leilao/infra/dao/LeilaoDaoFalso.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/caelum/leilao/servico/EncerradorDeLeilao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/caelum/leilao/servico/EncerradorDeLeilao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/br/com/caelum/leilao/dominio/EncerradorDeLeilaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/br/com/caelum/leilao/dominio/EncerradorDeLeilaoTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -22,22 +26,22 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="5" />
+          <entry key="java" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="5" />
+          <entry key="JAVA" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="364" />
+          <entry key="java" value="538" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="364" />
+          <entry key="JAVA" value="538" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.spring.boot.run.usages" />
@@ -51,12 +55,14 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/br/com/caelum/leilao/servico/EncerradorDeLeilao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="40" column="25" selection-start-line="40" selection-start-column="25" selection-end-line="40" selection-end-column="25" />
+            <state relative-caret-position="314">
+              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#316#317#0" expanded="true" />
-                <element signature="e#337#338#0" expanded="true" />
+                <element signature="e#429#430#0" expanded="true" />
+                <element signature="e#450#451#0" expanded="true" />
+                <element signature="e#405#406#0" expanded="true" />
+                <element signature="e#426#427#0" expanded="true" />
                 <element signature="e#925#926#0" expanded="true" />
                 <element signature="e#944#945#0" expanded="true" />
               </folding>
@@ -67,8 +73,20 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/br/com/caelum/leilao/dominio/EncerradorDeLeilaoTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="293">
-              <caret line="75" column="23" selection-start-line="75" selection-start-column="18" selection-end-line="75" selection-end-column="23" />
+            <state relative-caret-position="-47">
+              <caret line="33" column="6" selection-start-line="33" selection-start-column="6" selection-end-line="33" selection-end-column="6" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/br/com/caelum/leilao/infra/dao/RepositorioDeLeiloes.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="33" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -79,8 +97,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/br/com/caelum/leilao/infra/dao/LeilaoDaoFalso.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="29" column="1" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
+            <state relative-caret-position="34">
+              <caret line="5" column="60" selection-start-line="5" selection-start-column="60" selection-end-line="5" selection-end-column="60" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#217#225#0" expanded="true" />
@@ -96,7 +114,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/br/com/caelum/leilao/dominio/Leilao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
+            <state relative-caret-position="17">
               <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
             </state>
           </provider>
@@ -105,8 +123,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/br/com/caelum/leilao/infra/dao/LeilaoDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="135" column="52" selection-start-line="135" selection-start-column="52" selection-end-line="135" selection-end-column="52" />
+            <state relative-caret-position="68">
+              <caret line="17" column="55" selection-start-line="17" selection-start-column="55" selection-end-line="17" selection-end-column="55" />
             </state>
           </provider>
         </entry>
@@ -117,6 +135,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -126,9 +145,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/src/br/com/caelum/leilao/infra/dao/RepositorioDeLeiloes.java" />
+        <option value="$PROJECT_DIR$/src/br/com/caelum/leilao/infra/dao/LeilaoDao.java" />
         <option value="$PROJECT_DIR$/src/br/com/caelum/leilao/infra/dao/LeilaoDaoFalso.java" />
         <option value="$PROJECT_DIR$/src/br/com/caelum/leilao/servico/EncerradorDeLeilao.java" />
-        <option value="$PROJECT_DIR$/src/br/com/caelum/leilao/infra/dao/LeilaoDao.java" />
         <option value="$PROJECT_DIR$/test/br/com/caelum/leilao/dominio/EncerradorDeLeilaoTest.java" />
       </list>
     </option>
@@ -139,7 +159,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="676" />
     <option name="width" value="697" />
     <option name="height" value="735" />
@@ -236,7 +256,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538595369477" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538597920067" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -252,7 +272,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.EncerradorDeLeilaoTest">
+  <component name="RunManager" selected="JUnit.EncerradorDeLeilaoTest.naoDeveEncerrarLeilaoComMenosDeUmaSemana">
     <configuration name="EncerradorDeLeilaoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="teste-de-unidade" />
       <extension name="coverage">
@@ -283,14 +303,68 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="EncerradorDeLeilaoTest.naoDeveEncerrarLeilaoComMenosDeUmaSemana" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="teste-de-unidade" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.com.caelum.leilao.dominio.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="br.com.caelum.leilao.dominio" />
+      <option name="MAIN_CLASS_NAME" value="br.com.caelum.leilao.dominio.EncerradorDeLeilaoTest" />
+      <option name="METHOD_NAME" value="naoDeveEncerrarLeilaoComMenosDeUmaSemana" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EncerradorDeLeilaoTest.naoEncerrarLeilaoSeNaoHouver" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="teste-de-unidade" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.com.caelum.leilao.dominio.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="br.com.caelum.leilao.dominio" />
+      <option name="MAIN_CLASS_NAME" value="br.com.caelum.leilao.dominio.EncerradorDeLeilaoTest" />
+      <option name="METHOD_NAME" value="naoEncerrarLeilaoSeNaoHouver" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EncerradorDeLeilaoTest.testeLeilaoDao" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="teste-de-unidade" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.com.caelum.leilao.dominio.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="br.com.caelum.leilao.dominio" />
+      <option name="MAIN_CLASS_NAME" value="br.com.caelum.leilao.dominio.EncerradorDeLeilaoTest" />
+      <option name="METHOD_NAME" value="testeLeilaoDao" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="JUnit.EncerradorDeLeilaoTest" />
       <item itemvalue="JUnit.EncerradorDeLeilaoTest.deveEncerrarLeiloesQueComecaramUmaSemanaAtras" />
+      <item itemvalue="JUnit.EncerradorDeLeilaoTest.testeLeilaoDao" />
+      <item itemvalue="JUnit.EncerradorDeLeilaoTest.naoEncerrarLeilaoSeNaoHouver" />
+      <item itemvalue="JUnit.EncerradorDeLeilaoTest.naoDeveEncerrarLeilaoComMenosDeUmaSemana" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.EncerradorDeLeilaoTest" />
+        <item itemvalue="JUnit.EncerradorDeLeilaoTest.naoDeveEncerrarLeilaoComMenosDeUmaSemana" />
+        <item itemvalue="JUnit.EncerradorDeLeilaoTest.naoEncerrarLeilaoSeNaoHouver" />
+        <item itemvalue="JUnit.EncerradorDeLeilaoTest.testeLeilaoDao" />
         <item itemvalue="JUnit.EncerradorDeLeilaoTest.deveEncerrarLeiloesQueComecaramUmaSemanaAtras" />
+        <item itemvalue="JUnit.EncerradorDeLeilaoTest" />
       </list>
     </recent_temporary>
   </component>
@@ -304,47 +378,47 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1538589980017</updated>
-      <workItem from="1538589981611" duration="4625000" />
+      <workItem from="1538589981611" duration="7231000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="EncerradorDeLeilaoTest_deveEncerrarLeiloesQueComecaramUmaSemanaAtras - 2018.10.03 at 15h 23m 06s.xml">
+    <history-entry file="EncerradorDeLeilaoTest - 2018.10.03 at 16h 33m 27s.xml">
+      <configuration name="EncerradorDeLeilaoTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="EncerradorDeLeilaoTest - 2018.10.03 at 16h 33m 35s.xml">
+      <configuration name="EncerradorDeLeilaoTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="EncerradorDeLeilaoTest - 2018.10.03 at 16h 34m 03s.xml">
+      <configuration name="EncerradorDeLeilaoTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="EncerradorDeLeilaoTest - 2018.10.03 at 16h 35m 29s.xml">
+      <configuration name="EncerradorDeLeilaoTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="EncerradorDeLeilaoTest - 2018.10.03 at 16h 36m 12s.xml">
+      <configuration name="EncerradorDeLeilaoTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="EncerradorDeLeilaoTest - 2018.10.03 at 17h 17m 57s.xml">
+      <configuration name="EncerradorDeLeilaoTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="EncerradorDeLeilaoTest_deveEncerrarLeiloesQueComecaramUmaSemanaAtras - 2018.10.03 at 17h 18m 09s.xml">
       <configuration name="EncerradorDeLeilaoTest.deveEncerrarLeiloesQueComecaramUmaSemanaAtras" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EncerradorDeLeilaoTest - 2018.10.03 at 15h 53m 22s.xml">
-      <configuration name="EncerradorDeLeilaoTest" configurationId="JUnit" />
+    <history-entry file="EncerradorDeLeilaoTest_testeLeilaoDao - 2018.10.03 at 17h 18m 16s.xml">
+      <configuration name="EncerradorDeLeilaoTest.testeLeilaoDao" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EncerradorDeLeilaoTest - 2018.10.03 at 15h 55m 54s.xml">
-      <configuration name="EncerradorDeLeilaoTest" configurationId="JUnit" />
+    <history-entry file="EncerradorDeLeilaoTest_naoEncerrarLeilaoSeNaoHouver - 2018.10.03 at 17h 18m 24s.xml">
+      <configuration name="EncerradorDeLeilaoTest.naoEncerrarLeilaoSeNaoHouver" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EncerradorDeLeilaoTest - 2018.10.03 at 15h 56m 54s.xml">
-      <configuration name="EncerradorDeLeilaoTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="EncerradorDeLeilaoTest - 2018.10.03 at 16h 07m 38s.xml">
-      <configuration name="EncerradorDeLeilaoTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="EncerradorDeLeilaoTest - 2018.10.03 at 16h 11m 29s.xml">
-      <configuration name="EncerradorDeLeilaoTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="EncerradorDeLeilaoTest - 2018.10.03 at 16h 23m 58s.xml">
-      <configuration name="EncerradorDeLeilaoTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="EncerradorDeLeilaoTest - 2018.10.03 at 16h 26m 53s.xml">
-      <configuration name="EncerradorDeLeilaoTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="EncerradorDeLeilaoTest - 2018.10.03 at 16h 29m 10s.xml">
-      <configuration name="EncerradorDeLeilaoTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="EncerradorDeLeilaoTest - 2018.10.03 at 16h 30m 51s.xml">
-      <configuration name="EncerradorDeLeilaoTest" configurationId="JUnit" />
+    <history-entry file="EncerradorDeLeilaoTest_naoDeveEncerrarLeilaoComMenosDeUmaSemana - 2018.10.03 at 17h 18m 32s.xml">
+      <configuration name="EncerradorDeLeilaoTest.naoDeveEncerrarLeilaoComMenosDeUmaSemana" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4625000" />
+    <option name="totallyTimeSpent" value="7231000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Designer" order="0" />
@@ -352,7 +426,7 @@
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
-      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.24962178" />
+      <window_info content_ui="combo" id="Project" order="5" weight="0.24962178" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" order="0" />
       <window_info anchor="bottom" id="Terminal" order="1" />
@@ -376,6 +450,36 @@
       <window_info anchor="right" id="Ant Build" order="7" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="8" weight="0.25" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Designer" order="0" />
+      <window_info id="UI Designer" order="1" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info id="Image Layers" order="4" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.24962178" />
+      <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" order="0" />
+      <window_info anchor="bottom" id="Terminal" order="1" />
+      <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Database Changes" order="3" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Message" order="4" />
+      <window_info anchor="bottom" id="Find" order="5" />
+      <window_info anchor="bottom" id="Run" order="6" visible="true" weight="0.3295082" />
+      <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
+      <window_info anchor="bottom" id="Messages" order="8" weight="0.3295082" />
+      <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="11" />
+      <window_info anchor="right" id="Capture Analysis" order="0" />
+      <window_info anchor="right" id="Theme Preview" order="1" />
+      <window_info anchor="right" id="Database" order="2" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info anchor="right" id="Maven Projects" order="4" />
+      <window_info anchor="right" id="Palette" order="5" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="6" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="7" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="8" weight="0.25" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -384,17 +488,34 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/br/com/caelum/leilao/infra/dao/RepositorioDeLeiloes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="33" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/br/com/caelum/leilao/dominio/Leilao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
+        <state relative-caret-position="17">
           <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/br/com/caelum/leilao/infra/dao/LeilaoDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="17" column="55" selection-start-line="17" selection-start-column="55" selection-end-line="17" selection-end-column="55" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/br/com/caelum/leilao/infra/dao/LeilaoDaoFalso.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="1" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
+        <state relative-caret-position="34">
+          <caret line="5" column="60" selection-start-line="5" selection-start-column="60" selection-end-line="5" selection-end-column="60" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#217#225#0" expanded="true" />
@@ -408,29 +529,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/br/com/caelum/leilao/servico/EncerradorDeLeilao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="40" column="25" selection-start-line="40" selection-start-column="25" selection-end-line="40" selection-end-column="25" />
+        <state relative-caret-position="314">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#316#317#0" expanded="true" />
-            <element signature="e#337#338#0" expanded="true" />
+            <element signature="e#429#430#0" expanded="true" />
+            <element signature="e#450#451#0" expanded="true" />
+            <element signature="e#405#406#0" expanded="true" />
+            <element signature="e#426#427#0" expanded="true" />
             <element signature="e#925#926#0" expanded="true" />
             <element signature="e#944#945#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/br/com/caelum/leilao/infra/dao/LeilaoDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="135" column="52" selection-start-line="135" selection-start-column="52" selection-end-line="135" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/br/com/caelum/leilao/dominio/EncerradorDeLeilaoTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="75" column="23" selection-start-line="75" selection-start-column="18" selection-end-line="75" selection-end-column="23" />
+        <state relative-caret-position="-47">
+          <caret line="33" column="6" selection-start-line="33" selection-start-column="6" selection-end-line="33" selection-end-column="6" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
