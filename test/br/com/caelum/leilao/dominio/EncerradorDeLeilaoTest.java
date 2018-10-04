@@ -1,10 +1,12 @@
 package br.com.caelum.leilao.dominio;
 
 import br.com.caelum.leilao.builder.CriadorDeLeilao;
+import br.com.caelum.leilao.infra.dao.EnviadorDeEmail;
 import br.com.caelum.leilao.infra.dao.LeilaoDao;
 import br.com.caelum.leilao.infra.dao.RepositorioDeLeiloes;
 import br.com.caelum.leilao.servico.EncerradorDeLeilao;
 import org.junit.Test;
+import org.mockito.InOrder;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
@@ -33,7 +35,9 @@ public class EncerradorDeLeilaoTest {
         LeilaoDao daoFalso = mock(LeilaoDao.class);
         when(daoFalso.correntes()).thenReturn(leiloesAntigos);
 
-        EncerradorDeLeilao encerrador = new EncerradorDeLeilao(daoFalso);
+        EnviadorDeEmail enviadorDeEmail = mock(EnviadorDeEmail.class);
+
+        EncerradorDeLeilao encerrador = new EncerradorDeLeilao(daoFalso,enviadorDeEmail);
         encerrador.encerra();
 
         assertTrue(leilao1.isEncerrado());
@@ -53,10 +57,11 @@ public class EncerradorDeLeilaoTest {
                 .naData(antiga).constroi();
         List<Leilao> leiloesAntigos = Arrays.asList(leilao1);
 
+        EnviadorDeEmail enviadorDeEmail = mock(EnviadorDeEmail.class);
         RepositorioDeLeiloes daoFalso = mock(LeilaoDao.class);
         when(daoFalso.correntes()).thenReturn(leiloesAntigos);
 
-        EncerradorDeLeilao encerrador = new EncerradorDeLeilao(daoFalso);
+        EncerradorDeLeilao encerrador = new EncerradorDeLeilao(daoFalso,enviadorDeEmail);
         encerrador.encerra();
 
         assertEquals(0,encerrador.getTotalEncerrados());
@@ -69,7 +74,8 @@ public class EncerradorDeLeilaoTest {
         LeilaoDao daoFalso = mock(LeilaoDao.class);
         when(daoFalso.correntes()).thenReturn(new ArrayList<Leilao>());
 
-        EncerradorDeLeilao encerrador = new EncerradorDeLeilao(daoFalso);
+        EnviadorDeEmail enviadorDeEmail = mock(EnviadorDeEmail.class);
+        EncerradorDeLeilao encerrador = new EncerradorDeLeilao(daoFalso,enviadorDeEmail);
         encerrador.encerra();
 
         assertEquals(0,encerrador.getTotalEncerrados());
@@ -90,12 +96,42 @@ public class EncerradorDeLeilaoTest {
 
         Leilao leilao1 = new CriadorDeLeilao().para("Tv de Plasma").naData(antiga).constroi();
 
+        EnviadorDeEmail enviadorDeEmail = mock(EnviadorDeEmail.class);
         RepositorioDeLeiloes daoFalso = mock(RepositorioDeLeiloes.class);
         when(daoFalso.correntes()).thenReturn(Arrays.asList(leilao1));
 
-        EncerradorDeLeilao encerrador = new EncerradorDeLeilao(daoFalso);
+        EncerradorDeLeilao encerrador = new EncerradorDeLeilao(daoFalso,enviadorDeEmail);
         encerrador.encerra();
 
         verify(daoFalso,times(1)).atualiza(leilao1);
     }
+
+    @Test
+    public void emailsEnviadosNaOrdemCerta(){
+
+        Calendar antiga = Calendar.getInstance();
+        antiga.set(1999,1,20);
+
+        Leilao leilao1 = new CriadorDeLeilao().para("Tv de Plasma").naData(antiga).constroi();
+
+        EnviadorDeEmail enviadorDeEmail = mock(EnviadorDeEmail.class);
+        RepositorioDeLeiloes daoFalso = mock(RepositorioDeLeiloes.class);
+        when(daoFalso.correntes()).thenReturn(Arrays.asList(leilao1));
+
+        EncerradorDeLeilao encerrador = new EncerradorDeLeilao(daoFalso,enviadorDeEmail);
+        encerrador.encerra();
+        InOrder inOrder = inOrder(daoFalso, enviadorDeEmail);
+
+        inOrder.verify(daoFalso, times(1)).atualiza(leilao1);
+
+    }
+
+//
+//    atLeastOnce( ): o método deve ser executado pelomenos uma vez;
+//
+//    atLeast(n): o método deve ser executado no mínimo n vezes;
+//
+//    atMost(n): o método deve ser executado no máximo n vezes;
+//
+//    verify( ): verifica se o método foi executado.
 }
