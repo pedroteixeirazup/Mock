@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4a226a6d-247f-4acb-a468-637351a93802" name="Default Changelist" comment="" />
+    <list default="true" id="4a226a6d-247f-4acb-a468-637351a93802" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/br/com/caelum/leilao/dominio/EncerradorDeLeilaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/br/com/caelum/leilao/dominio/EncerradorDeLeilaoTest.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,12 +33,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="871" />
+          <entry key="java" value="956" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="871" />
+          <entry key="JAVA" value="956" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.spring.boot.run.usages" />
@@ -49,8 +52,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/br/com/caelum/leilao/servico/EncerradorDeLeilao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="30" column="35" selection-start-line="30" selection-start-column="35" selection-end-line="30" selection-end-column="35" />
+            <state relative-caret-position="255">
+              <caret line="31" column="35" selection-start-line="31" selection-start-column="35" selection-end-line="31" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -61,8 +64,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/br/com/caelum/leilao/dominio/EncerradorDeLeilaoTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="96" column="5" lean-forward="true" selection-start-line="96" selection-start-column="5" selection-end-line="96" selection-end-column="5" />
+            <state relative-caret-position="289">
+              <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -131,8 +134,8 @@
         <option value="$PROJECT_DIR$/src/br/com/caelum/leilao/infra/dao/RepositorioDeLeiloes.java" />
         <option value="$PROJECT_DIR$/src/br/com/caelum/leilao/infra/dao/LeilaoDao.java" />
         <option value="$PROJECT_DIR$/src/br/com/caelum/leilao/infra/dao/LeilaoDaoFalso.java" />
-        <option value="$PROJECT_DIR$/test/br/com/caelum/leilao/dominio/EncerradorDeLeilaoTest.java" />
         <option value="$PROJECT_DIR$/src/br/com/caelum/leilao/servico/EncerradorDeLeilao.java" />
+        <option value="$PROJECT_DIR$/test/br/com/caelum/leilao/dominio/EncerradorDeLeilaoTest.java" />
       </list>
     </option>
   </component>
@@ -160,7 +163,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538662577288" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538663034867" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -176,7 +179,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.EncerradorDeLeilaoTest.deveAtualizarLeiloesEncerrado">
+  <component name="RunManager" selected="JUnit.EncerradorDeLeilaoTest.deveEncerrarLeiloesQueComecaramUmaSemanaAtras">
     <configuration name="EncerradorDeLeilaoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="teste-de-unidade" />
       <extension name="coverage">
@@ -202,6 +205,22 @@
       <option name="PACKAGE_NAME" value="br.com.caelum.leilao.dominio" />
       <option name="MAIN_CLASS_NAME" value="br.com.caelum.leilao.dominio.EncerradorDeLeilaoTest" />
       <option name="METHOD_NAME" value="deveAtualizarLeiloesEncerrado" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EncerradorDeLeilaoTest.deveEncerrarLeiloesQueComecaramUmaSemanaAtras" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="teste-de-unidade" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.com.caelum.leilao.dominio.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="br.com.caelum.leilao.dominio" />
+      <option name="MAIN_CLASS_NAME" value="br.com.caelum.leilao.dominio.EncerradorDeLeilaoTest" />
+      <option name="METHOD_NAME" value="deveEncerrarLeiloesQueComecaramUmaSemanaAtras" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -239,36 +258,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EncerradorDeLeilaoTest.testeLeilaoDao" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="teste-de-unidade" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="br.com.caelum.leilao.dominio.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="br.com.caelum.leilao.dominio" />
-      <option name="MAIN_CLASS_NAME" value="br.com.caelum.leilao.dominio.EncerradorDeLeilaoTest" />
-      <option name="METHOD_NAME" value="testeLeilaoDao" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
-      <item itemvalue="JUnit.EncerradorDeLeilaoTest.testeLeilaoDao" />
       <item itemvalue="JUnit.EncerradorDeLeilaoTest.naoEncerrarLeilaoSeNaoHouver" />
       <item itemvalue="JUnit.EncerradorDeLeilaoTest.naoDeveEncerrarLeilaoComMenosDeUmaSemana" />
       <item itemvalue="JUnit.EncerradorDeLeilaoTest.deveAtualizarLeiloesEncerrado" />
       <item itemvalue="JUnit.EncerradorDeLeilaoTest" />
+      <item itemvalue="JUnit.EncerradorDeLeilaoTest.deveEncerrarLeiloesQueComecaramUmaSemanaAtras" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.EncerradorDeLeilaoTest.deveEncerrarLeiloesQueComecaramUmaSemanaAtras" />
         <item itemvalue="JUnit.EncerradorDeLeilaoTest.deveAtualizarLeiloesEncerrado" />
         <item itemvalue="JUnit.EncerradorDeLeilaoTest" />
         <item itemvalue="JUnit.EncerradorDeLeilaoTest.naoDeveEncerrarLeilaoComMenosDeUmaSemana" />
         <item itemvalue="JUnit.EncerradorDeLeilaoTest.naoEncerrarLeilaoSeNaoHouver" />
-        <item itemvalue="JUnit.EncerradorDeLeilaoTest.testeLeilaoDao" />
       </list>
     </recent_temporary>
   </component>
@@ -283,17 +286,11 @@
       <option name="presentableId" value="Default" />
       <updated>1538589980017</updated>
       <workItem from="1538589981611" duration="7231000" />
-      <workItem from="1538661635608" duration="850000" />
+      <workItem from="1538661635608" duration="1427000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="EncerradorDeLeilaoTest_naoEncerrarLeilaoSeNaoHouver - 2018.10.03 at 17h 18m 24s.xml">
-      <configuration name="EncerradorDeLeilaoTest.naoEncerrarLeilaoSeNaoHouver" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="EncerradorDeLeilaoTest_naoDeveEncerrarLeilaoComMenosDeUmaSemana - 2018.10.03 at 17h 18m 32s.xml">
-      <configuration name="EncerradorDeLeilaoTest.naoDeveEncerrarLeilaoComMenosDeUmaSemana" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="EncerradorDeLeilaoTest_deveAtualizarLeiloesEncerrado - 2018.10.04 at 11h 07m 53s.xml">
       <configuration name="EncerradorDeLeilaoTest.deveAtualizarLeiloesEncerrado" configurationId="JUnit" />
     </history-entry>
@@ -318,12 +315,18 @@
     <history-entry file="EncerradorDeLeilaoTest_deveAtualizarLeiloesEncerrado - 2018.10.04 at 11h 11m 01s.xml">
       <configuration name="EncerradorDeLeilaoTest.deveAtualizarLeiloesEncerrado" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="EncerradorDeLeilaoTest_deveAtualizarLeiloesEncerrado - 2018.10.04 at 11h 16m 20s.xml">
+      <configuration name="EncerradorDeLeilaoTest.deveAtualizarLeiloesEncerrado" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="EncerradorDeLeilaoTest_deveEncerrarLeiloesQueComecaramUmaSemanaAtras - 2018.10.04 at 11h 23m 53s.xml">
+      <configuration name="EncerradorDeLeilaoTest.deveEncerrarLeiloesQueComecaramUmaSemanaAtras" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8081000" />
+    <option name="totallyTimeSpent" value="8658000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Designer" order="0" />
@@ -429,8 +432,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/br/com/caelum/leilao/servico/EncerradorDeLeilao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="30" column="35" selection-start-line="30" selection-start-column="35" selection-end-line="30" selection-end-column="35" />
+        <state relative-caret-position="255">
+          <caret line="31" column="35" selection-start-line="31" selection-start-column="35" selection-end-line="31" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -439,8 +442,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/br/com/caelum/leilao/dominio/EncerradorDeLeilaoTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="96" column="5" lean-forward="true" selection-start-line="96" selection-start-column="5" selection-end-line="96" selection-end-column="5" />
+        <state relative-caret-position="289">
+          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
