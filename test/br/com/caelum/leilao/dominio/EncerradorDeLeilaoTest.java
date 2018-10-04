@@ -79,4 +79,20 @@ public class EncerradorDeLeilaoTest {
         when(leilaoTeste.teste()).thenReturn(leilaoTeste.teste());
         assertEquals("teste", leilaoTeste.teste());
     }
+
+    @Test
+    public void deveAtualizarLeiloesEncerrado(){
+        Calendar antiga = Calendar.getInstance();
+        antiga.set(1999,1,20);
+
+        Leilao leilao1 = new CriadorDeLeilao().para("Tv de Plasma").naData(antiga).constroi();
+
+        RepositorioDeLeiloes daoFalso = mock(RepositorioDeLeiloes.class);
+        when(daoFalso.correntes()).thenReturn(Arrays.asList(leilao1));
+
+        EncerradorDeLeilao encerrador = new EncerradorDeLeilao(daoFalso);
+        encerrador.encerra();
+
+        verify(daoFalso).atualiza(leilao1);
+    }
 }

@@ -28,6 +28,7 @@ public class EncerradorDeLeilao {
 				encerrados++;
 				leilao.encerra();
 				dao.salva(leilao);
+				dao.atualiza(leilao);
 			}
 		}
 	}
