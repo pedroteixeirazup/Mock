@@ -93,6 +93,6 @@ public class EncerradorDeLeilaoTest {
         EncerradorDeLeilao encerrador = new EncerradorDeLeilao(daoFalso);
         encerrador.encerra();
 
-        verify(daoFalso).atualiza(leilao1);
+        verify(daoFalso,times(1)).atualiza(leilao1);
     }
 }

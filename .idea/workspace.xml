@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4a226a6d-247f-4acb-a468-637351a93802" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/br/com/caelum/leilao/dominio/EncerradorDeLeilaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/br/com/caelum/leilao/dominio/EncerradorDeLeilaoTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="4a226a6d-247f-4acb-a468-637351a93802" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,12 +30,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="856" />
+          <entry key="java" value="871" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="856" />
+          <entry key="JAVA" value="871" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.spring.boot.run.usages" />
@@ -52,8 +49,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/br/com/caelum/leilao/servico/EncerradorDeLeilao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="24" selection-start-line="24" selection-end-line="24" />
+            <state relative-caret-position="238">
+              <caret line="30" column="35" selection-start-line="30" selection-start-column="35" selection-end-line="30" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -64,8 +61,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/br/com/caelum/leilao/dominio/EncerradorDeLeilaoTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="82" selection-start-line="82" selection-start-column="2" selection-end-line="96" selection-end-column="7" />
+            <state relative-caret-position="255">
+              <caret line="96" column="5" lean-forward="true" selection-start-line="96" selection-start-column="5" selection-end-line="96" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -134,8 +131,8 @@
         <option value="$PROJECT_DIR$/src/br/com/caelum/leilao/infra/dao/RepositorioDeLeiloes.java" />
         <option value="$PROJECT_DIR$/src/br/com/caelum/leilao/infra/dao/LeilaoDao.java" />
         <option value="$PROJECT_DIR$/src/br/com/caelum/leilao/infra/dao/LeilaoDaoFalso.java" />
-        <option value="$PROJECT_DIR$/src/br/com/caelum/leilao/servico/EncerradorDeLeilao.java" />
         <option value="$PROJECT_DIR$/test/br/com/caelum/leilao/dominio/EncerradorDeLeilaoTest.java" />
+        <option value="$PROJECT_DIR$/src/br/com/caelum/leilao/servico/EncerradorDeLeilao.java" />
       </list>
     </option>
   </component>
@@ -145,7 +142,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="676" />
     <option name="width" value="697" />
     <option name="height" value="735" />
@@ -163,7 +160,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538662263042" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538662577288" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -286,47 +283,47 @@
       <option name="presentableId" value="Default" />
       <updated>1538589980017</updated>
       <workItem from="1538589981611" duration="7231000" />
-      <workItem from="1538661635608" duration="464000" />
+      <workItem from="1538661635608" duration="850000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="EncerradorDeLeilaoTest - 2018.10.03 at 16h 33m 27s.xml">
-      <configuration name="EncerradorDeLeilaoTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="EncerradorDeLeilaoTest - 2018.10.03 at 16h 33m 35s.xml">
-      <configuration name="EncerradorDeLeilaoTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="EncerradorDeLeilaoTest - 2018.10.03 at 16h 34m 03s.xml">
-      <configuration name="EncerradorDeLeilaoTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="EncerradorDeLeilaoTest - 2018.10.03 at 16h 35m 29s.xml">
-      <configuration name="EncerradorDeLeilaoTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="EncerradorDeLeilaoTest - 2018.10.03 at 16h 36m 12s.xml">
-      <configuration name="EncerradorDeLeilaoTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="EncerradorDeLeilaoTest - 2018.10.03 at 17h 17m 57s.xml">
-      <configuration name="EncerradorDeLeilaoTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="EncerradorDeLeilaoTest_deveEncerrarLeiloesQueComecaramUmaSemanaAtras - 2018.10.03 at 17h 18m 09s.xml">
-      <configuration name="EncerradorDeLeilaoTest.deveEncerrarLeiloesQueComecaramUmaSemanaAtras" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="EncerradorDeLeilaoTest_testeLeilaoDao - 2018.10.03 at 17h 18m 16s.xml">
-      <configuration name="EncerradorDeLeilaoTest.testeLeilaoDao" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="EncerradorDeLeilaoTest_naoEncerrarLeilaoSeNaoHouver - 2018.10.03 at 17h 18m 24s.xml">
       <configuration name="EncerradorDeLeilaoTest.naoEncerrarLeilaoSeNaoHouver" configurationId="JUnit" />
     </history-entry>
     <history-entry file="EncerradorDeLeilaoTest_naoDeveEncerrarLeilaoComMenosDeUmaSemana - 2018.10.03 at 17h 18m 32s.xml">
       <configuration name="EncerradorDeLeilaoTest.naoDeveEncerrarLeilaoComMenosDeUmaSemana" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="EncerradorDeLeilaoTest_deveAtualizarLeiloesEncerrado - 2018.10.04 at 11h 07m 53s.xml">
+      <configuration name="EncerradorDeLeilaoTest.deveAtualizarLeiloesEncerrado" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="EncerradorDeLeilaoTest_deveAtualizarLeiloesEncerrado - 2018.10.04 at 11h 08m 06s.xml">
+      <configuration name="EncerradorDeLeilaoTest.deveAtualizarLeiloesEncerrado" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="EncerradorDeLeilaoTest - 2018.10.04 at 11h 08m 27s.xml">
+      <configuration name="EncerradorDeLeilaoTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="EncerradorDeLeilaoTest_deveAtualizarLeiloesEncerrado - 2018.10.04 at 11h 08m 40s.xml">
+      <configuration name="EncerradorDeLeilaoTest.deveAtualizarLeiloesEncerrado" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="EncerradorDeLeilaoTest_deveAtualizarLeiloesEncerrado - 2018.10.04 at 11h 09m 17s.xml">
+      <configuration name="EncerradorDeLeilaoTest.deveAtualizarLeiloesEncerrado" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="EncerradorDeLeilaoTest_deveAtualizarLeiloesEncerrado - 2018.10.04 at 11h 09m 25s.xml">
+      <configuration name="EncerradorDeLeilaoTest.deveAtualizarLeiloesEncerrado" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="EncerradorDeLeilaoTest_deveAtualizarLeiloesEncerrado - 2018.10.04 at 11h 10m 53s.xml">
+      <configuration name="EncerradorDeLeilaoTest.deveAtualizarLeiloesEncerrado" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="EncerradorDeLeilaoTest_deveAtualizarLeiloesEncerrado - 2018.10.04 at 11h 11m 01s.xml">
+      <configuration name="EncerradorDeLeilaoTest.deveAtualizarLeiloesEncerrado" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7709000" />
+    <option name="totallyTimeSpent" value="8081000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Designer" order="0" />
@@ -396,16 +393,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/br/com/caelum/leilao/servico/EncerradorDeLeilao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/br/com/caelum/leilao/infra/dao/LeilaoDaoFalso.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -440,10 +427,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/br/com/caelum/leilao/servico/EncerradorDeLeilao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="30" column="35" selection-start-line="30" selection-start-column="35" selection-end-line="30" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test/br/com/caelum/leilao/dominio/EncerradorDeLeilaoTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="82" selection-start-line="82" selection-end-line="96" selection-end-column="5" />
+        <state relative-caret-position="255">
+          <caret line="96" column="5" lean-forward="true" selection-start-line="96" selection-start-column="5" selection-end-line="96" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
