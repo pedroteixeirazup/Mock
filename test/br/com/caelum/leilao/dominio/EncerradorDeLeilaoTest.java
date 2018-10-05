@@ -132,27 +132,30 @@ public class EncerradorDeLeilaoTest {
 
     }
     @Test
-    public void deveContinuarAExecucaoMesmoQuandoDaoFalha() {
-        Calendar antiga = Calendar.getInstance();
-        antiga.set(1999, 1, 20);
+    public void deveContinuarAExecucaoMesmoQuandoDaoFalha(){
 
-        Leilao leilao1 = new CriadorDeLeilao().para("TV de plasma")
-                .naData(antiga).constroi();
-        Leilao leilao2 = new CriadorDeLeilao().para("Geladeira")
-                .naData(antiga).constroi();
+        Calendar antiga = Calendar.getInstance();
+        antiga.set(1999,1,20);
+
+        Leilao leilao1 = new CriadorDeLeilao().para("TV de plasma").naData(antiga).constroi();
+        Leilao leilao2 = new CriadorDeLeilao().para("Geladeira").naData(antiga).constroi();
 
         RepositorioDeLeiloes daoFalso = mock(RepositorioDeLeiloes.class);
-        when(daoFalso.correntes()).thenReturn(Arrays.asList(leilao1, leilao2));
+        EnviadorDeEmail enviadorDeEmail = mock(EnviadorDeEmail.class);
+        Carteiro carteirofalso = mock(Carteiro.class);
 
-        doThrow(new RuntimeException()).when(daoFalso).atualiza(leilao1);
+        when(daoFalso.correntes()).thenReturn(Arrays.asList(leilao1,leilao2));
+//        doThrow(new RuntimeException()).when(daoFalso).atualiza(leilao1); // Simula o Lançamento de exeçoes
+       //doThrow(new RuntimeException()).when(carteirofalso).envia(leilao1);
+        //doThrow(new Exception()).when(carteirofalso).envia(leilao1);
+        doThrow(new RuntimeException()).when(daoFalso).atualiza(any(Leilao.class)); //Não precisara ficar replicando codigo com o any(), qualquer leilao lançara runtime
+        EncerradorDeLeilao encerradorDeLeilao = new EncerradorDeLeilao(daoFalso,carteirofalso);
+        encerradorDeLeilao.encerra();
 
-        Carteiro carteiroFalso= mock(Carteiro.class);
-        EncerradorDeLeilao encerrador = new EncerradorDeLeilao(daoFalso,carteiroFalso);
+       // verify(daoFalso).atualiza(leilao2);
+       // verify(carteirofalso).envia(leilao2);
 
-        encerrador.encerra();
-
-        verify(daoFalso).atualiza(leilao2);
-        verify(carteiroFalso).envia(leilao2);
+        verify(carteirofalso, never()).envia(any(Leilao.class));//verifica para todos os leiloes.
     }
 
 //
